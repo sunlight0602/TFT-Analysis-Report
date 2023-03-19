@@ -1,0 +1,3 @@
+paddleocr>=2.0.1
+pyobjc
+python<=3.9
