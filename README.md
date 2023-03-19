@@ -15,6 +15,7 @@ python -m pip install paddlepaddle -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip install "paddleocr>=2.0.1" --upgrade PyMuPDF==1.21.1
 pip uninstall numpy
 pip install numpy==1.23
+pip install pyobjc
 python main.py
 ```
 Close by right click and click "exit" on the icon.
