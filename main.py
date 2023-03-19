@@ -2,6 +2,8 @@ import AppKit
 import Quartz
 from PIL import Image
 
+from ocr import do_ocr
+
 
 # Define the window class
 class MyWindow(AppKit.NSWindow):
@@ -69,7 +71,9 @@ class MyWindow(AppKit.NSWindow):
         pilImage = Image.frombytes("RGB", (width, height), rawData, "raw", "BGRX", bytesPerRow)
 
         # time_stamp = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-        pilImage.save("stage.png")
+        pilImage.save("./captured_images/stage.png")
+        res = do_ocr("./captured_images/stage.png")
+        print(res)
 
         # ocr_result = pytesseract.image_to_string(pilImage)
         # print("stage:", ocr_result)
