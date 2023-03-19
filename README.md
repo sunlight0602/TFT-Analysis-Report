@@ -18,3 +18,5 @@ pip install numpy==1.23
 python main.py
 ```
 Close by right click and click "exit" on the icon.
+
+系統偏好設定 >> 安全性與隱私權 >> 螢幕錄製 >> （加入 iTerm 和 VSCode）
